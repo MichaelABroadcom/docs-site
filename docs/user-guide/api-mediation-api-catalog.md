@@ -10,6 +10,10 @@ As an application developer, use the API Catalog to view what services are runni
 
 **Note:** For more information about how to configure the API Catalog in the application.yml, see: [Add API Onboarding Configuration](../extend/extend-apiml/onboard-spring-boot-enabler.md).
 
+## API Versioning
+
+See [API Catalog and Versioning](../extend/extend-apiml/api-mediation-versioning.md) for more information about the API versioning.
+
 ## View Service Information and API Documentation in the API Catalog
 
 Use the API Catalog to view services, API documentation, descriptive information about the service, the current state of the service, service endpoints, and detailed descriptions of these endpoints.
@@ -30,8 +34,8 @@ Services that belong to the same product family are displayed on the same tile.
    **Notes:**
 
    * The state of the service is indicated in the service tile on the dashboard page.
-    If no instances of the service are currently running, the tile displays a message displays that no services are running.
-   * At least one instance of a service must be started and registered with the discovery service for it to be visible
+    If no instances of the service are currently running, the tile displays a message that no services are running.
+   * At least one instance of a service must be started and registered with the Discovery Service for it to be visible
     in the API Catalog. If the service that you are onboarding is running, and
     the corresponding API documentation is displayed, this API documentation is cached and remains visible
     even when the service and all service instances stop.
@@ -41,7 +45,15 @@ Services that belong to the same product family are displayed on the same tile.
 
    <img src="../images/api-mediation/newswagger.png" alt="controller detail" width="500px"/>
 
-3. Expand the endpoint panel to see a detailed summary with responses and parameters of each endpoint,
+3. Select the version (**v1**, **v2**) to view the documentation of a specific API version.
+
+    **Example:**
+
+    <img src="../images/api-mediation/discoverableclient-apiv1.png" alt="discoverable client api v1" width="500"/>
+
+    <img src="../images/api-mediation/discoverableclient-apiv2.png" alt="discoverable client api v2" width="500"/>
+
+4. Expand the endpoint panel to see a detailed summary with responses and parameters of each endpoint,
  the endpoint description, and the full structure of the endpoint.
 
    **Example:**
@@ -116,7 +128,7 @@ This section outlines the process for making a request.
 
     <img src="../images/api-mediation/discoverable_clien_pet_swagger_execute.png" alt="endpoint detail" width="700px"/>
 
-    The API Catalog Swagger UI submits the request and shows the `curl` that was submitted. The Responses section shows the response. 
+    The API Catalog Swagger UI submits the request and shows the _curl_ that was submitted. The Responses section shows the response. 
 
    **Example:**
 
@@ -125,13 +137,13 @@ This section outlines the process for making a request.
 
 ## Static APIs refresh functionality in the API Catalog
 
-The API Catalog enables users to manually refresh static service APIs. Use the `Refresh Static APIs` option if you change a static service API and want these changes to be visible in the API Catalog without restarting the Discovery Service.
+The API Catalog enables users to manually refresh static service APIs. Use the **Refresh Static APIs** option if you change a static service API and want these changes to be visible in the API Catalog without restarting the Discovery Service.
 
 **Example:**
 
 <img src="../images/api-mediation/api_refresh_button.png" alt="api refresh" width="700px"/>
 
-To refresh the status of a static service, press the `Refresh` option located in the upper right-hand side of the API Catalog UI. 
+To refresh the status of a static service, click the **Refresh** option located in the upper right-hand side of the API Catalog UI. 
 Successful requests return a pop-up notification that displays the message, `The refresh of static APIs was successful!`.
  
 **Example:**
@@ -145,5 +157,5 @@ Successful requests return a pop-up notification that displays the message, `The
 
 <img src="../images/api-mediation/api_refresh_error.png" alt="api refresh error" width="700px"/>
 
-**Note:** The manual `Refresh Static APIs` option applies only to static service APIs. Changes to the status of services that are onboarded to allow for dynamic discovery require a restart of the specific services where changes are applied. It is not necessary to restart the API Catalog or the Discovery Service.
+**Note:** The manual **Refresh Static APIs** option applies only to static service APIs. Changes to the status of services that are onboarded to allow for dynamic discovery require a restart of the specific services where changes are applied. It is not necessary to restart the API Catalog or the Discovery Service.
 

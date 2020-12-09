@@ -175,6 +175,7 @@ services:
           swaggerUrl: http://localhost:8080/v2/swagger.json
           documentationUrl: https://petstore.swagger.io/
           version: 2.0.0
+          defaultApi: true
       customMetadata:
           yourqualifier:
               key1: value1
@@ -391,28 +392,15 @@ additionalServiceMetadata:
 
         (Optional) This parameter specifies the actual version of the API in [semantic versioning](https://semver.org/) format. This can be used when _swaggerUrl_ is not provided.
 
+    * **apiInfo.defaultApi**
+        
+        (Optional) This paraemeter specifics that the API is the default one to show in the API Catalog. If this not set to true for any API, or multiple APIs have it set to true,
+        then the default API becomes the API with the highest major version as seen in `apiInfo.version`.
+
 * **customMetadata**
 
-    (Optional) Additional metadata can be added to the instance information that is registered in the Discovery Service in the `customMetadata` section. This information is propagated from the Discovery Service to the onboarded services (clients). In general, additional metadata do not change the behavior of the client. Some specific metadata can configure the functionality of the API Mediation Layer. Such metadata are generally prefixed with the `apiml.` qualifier. We recommend you define your own qualifier, and group all metadata you wish to publish under this qualifier.
-
-* **customMetadata.apiml.enableUrlEncodedCharacters**
-      
-    When this parameter is set to `true`, the Gateway allows encoded characters to be part of URL requests redirected through the Gateway. The default setting of `false` is the recommended setting. Change this setting to `true` only if you expect certain encoded characters in your application's requests.
-          
-    **Important!**  When the expected encoded character is an encoded slash or backslash (`%2F`, `%5C`), make sure the Gateway is also configured to allow encoded slashes. For more info see [Installing the Zowe runtime on z/OS](../../user-guide/install-zos.md).
-
-* **customMetadata.apiml.connectTimeout**
+   Custom metadata are described [here](custom-metadata.md).
     
-    The value in milliseconds that specifies a period, in which API ML should establish a single, non-managed connection with this service. If omitted, the default value specified in the API ML Gateway service configuration is used.
-
-* **customMetadata.apiml.readTimeout**
-    
-    The value in milliseconds that specifies the  time of inactivity between two packets in response from this service to API ML. If omitted, the default value specified in the API MLGateway service configuration is used.
-
-* **customMetadata.apiml.connectionManagerTimeout**
-    
-    HttpClient employs a special entity to manage access to HTTP connections called by the HTTP connection manager. The purpose of an HTTP connection manager is to serve as a factory for new HTTP connections, to manage the life cycle of persistent connections, and to synchronize access to persistent connections. Internally, it works with managed connections which serve as proxies for real connections. ConnectionManagerTimeout specifies a period, in which managed connections with API ML should be established. The value is in milliseconds. If omitted, the default value specified in the API ML Gateway service configuration is used.
-              
 * **catalogUiTileId**
 
    This parameter specifies the unique identifier for the API services group.
@@ -486,15 +474,7 @@ The following procedure describes how to add your service to the API Mediation L
 
     **Tip:** Wait for the services to be ready. This process may take a few minutes.
 
-4.  Go to the following URL to reach the API Gateway (`port 10010`) and see the paths that are routed by the API Gateway. If the authentication is required and the default configuration provider on local instance is used the username is user and password user:
-
-    `https://localhost:10010/application/routes`
-
-    The following line should appear:
-
-    `/api/v2/petstore/**: "petstore"`
-
-    This line indicates that requests to relative gateway paths that start with `/api/v2/petstore/` are routed to the service with the service ID `petstore`.
+4.  [Validate successful onboarding](./onboard-overview.md#validating-successful-onboarding)
 
     You successfully defined your Java application if your service is running and you can access the service endpoints. The following example is the service endpoint for the sample application:
 
@@ -527,15 +507,7 @@ After you define and validate the service in YAML format, you are ready to add y
 
 4. Restart Zowe runtime or follow steps in section [(Optional) Reload the services definition after the update when the API Mediation Layer is already started](#optional-reload-the-services-definition-after-the-update-when-the-api-mediation-layer-is-already-started) which allows you to add your static API service to an already running Zowe.  
 
-5.  Go to the following URL to reach the API Gateway (default port 7554) and see the paths that are routed by the API Gateway:
-
-    `https://${zoweHostname}:${gatewayHttpsPort}/application/routes`
-
-    The following line should appear:
-
-    `/api/v2/petstore/**: "petstore"`
-
-    This line indicates that requests to the relative gateway paths that start with `/api/v2/petstore/` are routed to the service with service ID `petstore`.
+5.  [Validate successful onboarding](./onboard-overview.md#validating-successful-onboarding)
 
 You successfully defined your Java application if your service is running and you can access its endpoints. The endpoint displayed for the sample application is:
 ```
@@ -570,6 +542,12 @@ The following procedure enables you to refresh the API definitions after you cha
 
     ```
     httpie --cert=keystore/localhost/localhost.pem --verify=keystore/local_ca/localca.cer -j POST     https://localhost:10011/discovery/api/v1/staticApi
+    ```
+   
+    Alternatively, it is possible to use curl to issue the POST call if it is installed on your system:
+    
+    ```
+    curl -X POST --cert keystore/localhost/localhost.pem --cacert keystore/localhost/localhost.keystore.cer https://localhost:10011/discovery/api/v1/staticApi
     ```
 
 2. Check if your updated definition is effective.
