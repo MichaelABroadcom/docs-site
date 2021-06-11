@@ -6,20 +6,20 @@ You are welcome to contribute to the Zowe Documentation repository. Anyone can o
 * Slack: The Zowe Documentation team communicates using the Slack application. To learn about Slack, see ...
 * Markdown Language: The Zowe documentation is written in Markdown markup language. [**Learn the basic syntax**][84fff357].
 
-In addition to being familiar with the Zowe community and how we work together, you will need to sign the CNCF Contributor License Agreement. The Contributor License Agreement defines the terms under which you contribute to Zowe documentation. Contributions to Zowe documentation are reviewed before being committed to the repository. Committing chnges to the Zowe repository requires additional access rights. See https://github.com/zowe/community/blob/master/COMMITTERS.md. Also see Participating in Zowe Documentation for more details about roles and permissions.
+In addition to being familiar with the Zowe community and how we work together, you will need to sign the CNCF Contributor License Agreement. The Contributor License Agreement defines the terms under which you contribute to Zowe documentation. Contributions to Zowe documentation are reviewed before being committed to the repository. Committing changes to the Zowe repository requires additional access rights. See https://github.com/zowe/community/blob/master/COMMITTERS.md. Also see Participating in Zowe Documentation for more details about roles and permissions.
 
 ## Getting Started Checklist
 If you are ready to get started contributing to thhe Zowe Documentation repository:
 * Verify that you have completed all of the items in [Before You Get Started<a name="start"></a>](#before-you-get-started).
-* Familiarize yourself with the documentation repository and the website's static site generator. (uh, what?)
-  * Review the site's organization
-  * Review important files
-* Verify you can open a pull request and review changes.
+* Familiarize yourself with the documentation repository
+  * Review the site's overall organization and structure
+  * Review the help files related to your planned changes or addition
+* Verify that you can open a pull request and review changes
 * Review the release process
-* Basic tools/setup for those that aren’t familiar although these are. (need some clarification on what the basoc tools and setup may be, if not already address in the Before You Get Stated section)
+* Basic tools/setup for those that aren’t familiar although these are. (need some clarification on what the basic tools and setup may be, if not already address in the Before You Get Stated section)
 * Processes (open an issue, open a PR, etc…)
-* Documentation style guidelines
-* If you are not yet a committer, fork the repository, (double check with someone if forking is always required)
+* Read the documentation style guidelines
+* Fork the docs-stage repository (If you are not yet a committer) 
 
 
 ## Sending a GitHub Pull Request
@@ -38,9 +38,8 @@ If you are ready to get started contributing to thhe Zowe Documentation reposito
   - [Graphics<a name="graphics"></a>](#graphics)
   - [Abbreviations<a name="abbreviations"></a>](#abbreviations)
   - [Structure and format<a name="Structure"></a>](#structure-and-format)
-  - [Word usage<a name="usage"></a>](#word-usage-1)
 
-:fireworks: :balloon: **First off, thanks for taking the time to contribute!** :sparkler: :confetti_ball:
+
 
 We provide you a set of guidelines for contributing to Zowe&trade; documentation, which are hosted in the [Zowe / docs-site][b5d824b5] on GitHub. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose content changes to this documentation.
 
