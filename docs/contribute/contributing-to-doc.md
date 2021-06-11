@@ -1,10 +1,24 @@
 # Contributing to Zowe Documentation <!-- omit in toc -->
 
-## Before You Get Started
+- [Before You Get Started<a name="start"></a>](#before-you-get-started)
+- [Contributing to documentation<a name="contribute"></a>](#contributing-to-documentation)
+  - [Sending a GitHub pull request](#sending-a-github-pull-request)
+  - [Opening an issue for the documentation](#opening-an-issue-for-the-documentation)
+- [Documentation Style guide <a name="style"></a>](#documentation-style-guide-)
+  - [Headings and titles<a name="headings"></a>](#headings-and-titles)
+  - [Technical elements<a name="ui"></a>](#technical-elements)
+  - [Tone<a name="tone"></a>](#tone)
+  - [Word usage<a name="word"></a>](#word-usage)
+  - [Graphics<a name="graphics"></a>](#graphics)
+  - [Abbreviations<a name="abbreviations"></a>](#abbreviations)
+  - [Structure and format<a name="Structure"></a>](#structure-and-format)
+
+## Before You Get Started<a name="start"></a>
 You are welcome to contribute to the Zowe Documentation repository. Anyone can open an issue about documentation, or contribute a change with a pull request (PR) to the zowe/docs-site GitHub repository. However, before contributing a documentation change to the repository, you should be familiar with:
-* Git and Github: To learn about git and GitHub, see ...
-* Slack: The Zowe Documentation team communicates using the Slack application. To learn about Slack, see ...
-* Markdown Language: The Zowe documentation is written in Markdown markup language. [**Learn the basic syntax**][84fff357].
+* Git and Github: To learn about git and GitHub, refer to the [Github Guides](https://guides.github.com/).
+* Slack: The Zowe Documentation team communicates using the Slack application. To learn about Slack, refer to the [Slack Help Center](https://slack.com/help). The Zowe team is part of the [Open Mainframe Project](https://openmainframeproject.slack.com
+) channel.
+* Markdown Language: The Zowe documentation is written in Markdown language. To learn about Markdown, refer to 
 
 In addition to being familiar with the Zowe community and how we work together, you will need to sign the CNCF Contributor License Agreement. The Contributor License Agreement defines the terms under which you contribute to Zowe documentation. Contributions to Zowe documentation are reviewed before being committed to the repository. Committing changes to the Zowe repository requires additional access rights. See https://github.com/zowe/community/blob/master/COMMITTERS.md. Also see Participating in Zowe Documentation for more details about roles and permissions.
 
@@ -21,24 +35,11 @@ If you are ready to get started contributing to thhe Zowe Documentation reposito
 * Read the documentation style guidelines
 * Fork the docs-stage repository (If you are not yet a committer) 
 
-
+## The Zowe Documentation Repository
+The Zowe documentation is managed in a [GitHub repository](https://github.com/zowe/docs-site).
 ## Sending a GitHub Pull Request
 
 ## Opening An Issue for Zowe Documentation
-
-- [Before you get started<a name="start"></a>](#before-you-get-started)
-- [Contributing to documentation<a name="contribute"></a>](#contributing-to-documentation)
-  - [Sending a GitHub pull request](#sending-a-github-pull-request)
-  - [Opening an issue for the documentation](#opening-an-issue-for-the-documentation)
-- [Documentation Style guide <a name="style"></a>](#documentation-style-guide-)
-  - [Headings and titles<a name="headings"></a>](#headings-and-titles)
-  - [Technical elements<a name="ui"></a>](#technical-elements)
-  - [Tone<a name="tone"></a>](#tone)
-  - [Word usage<a name="word"></a>](#word-usage)
-  - [Graphics<a name="graphics"></a>](#graphics)
-  - [Abbreviations<a name="abbreviations"></a>](#abbreviations)
-  - [Structure and format<a name="Structure"></a>](#structure-and-format)
-
 
 
 We provide you a set of guidelines for contributing to Zowe&trade; documentation, which are hosted in the [Zowe / docs-site][b5d824b5] on GitHub. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose content changes to this documentation.
@@ -54,7 +55,7 @@ We provide you a set of guidelines for contributing to Zowe&trade; documentation
 
 :arrow_right: [Word usage](#usage)
 
-## Before you get started<a name="start"></a>
+## Befoe you get started
 
 The Zowe documentation is written in Markdown markup language. Not familiar with Markdown? [**Learn the basic syntax**][84fff357].
 
