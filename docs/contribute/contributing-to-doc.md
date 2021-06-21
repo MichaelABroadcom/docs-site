@@ -18,7 +18,7 @@ You are welcome to contribute to the Zowe&trade; documentation repository. Anyon
 * Git and Github: To learn about git and GitHub, refer to the [Github Guides](https://guides.github.com/).
 * Slack: The Zowe Documentation team communicates using the Slack application. To learn about Slack, refer to the [Slack Help Center](https://slack.com/help). The Zowe team is part of the [Open Mainframe Project](https://openmainframeproject.slack.com
 ) channel.
-* Markdown Language: The Zowe documentation is written in Markdown language. To learn about Markdown, refer to 
+* Markdown Language: The Zowe documentation is written in Markdown language. To learn about Markdown, refer to  [The Markdown Guide](https://www.markdownguide.org/)
 
 In addition to being familiar with the Zowe community and how we work together, you will need to sign the CNCF Contributor License Agreement. The Contributor License Agreement defines the terms under which you contribute to Zowe documentation. Contributions to Zowe documentation are reviewed before being committed to the repository. Committing changes to the Zowe repository requires additional access rights. See https://github.com/zowe/community/blob/master/COMMITTERS.md. Also see Participating in Zowe Documentation for more details about roles and permissions.
 
@@ -60,22 +60,15 @@ Follow these steps:
 
 ## Documentation Style guide <a name="style"></a>
 
-This section gives writing style guidelines for the Zowe documentation. These are guidelines, not rules. Use your best judgment, and feel free to propose content changes to this documentation in a pull request.
+This section gives writing style guidelines for the Zowe documentation.
 
-:arrow_right: [Headings and titles](#headings)
-
-:arrow_right: [Technical elements](#ui)
-
-:arrow_right: [Tone](#tone)
-
-:arrow_right: [Word usage](#word)
-
-:arrow_right: [Graphics](#graphics)
-
-:arrow_right: [Abbreviations](#abbreviations)
-
-:arrow_right: [Structure and format](#Structure)
-
+* [Headings and titles](#headings)
+* [Technical elements](#ui)
+* [Tone](#tone)
+* [Word usage](#word)
+* [Graphics](#graphics)
+* [Abbreviations](#abbreviations)
+* [Structure and format](#Structure)
 
 ### Headings and titles<a name="headings"></a>
 
