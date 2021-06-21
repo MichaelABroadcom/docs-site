@@ -14,7 +14,7 @@
   - [Structure and format<a name="Structure"></a>](#structure-and-format)
 
 ## Before You Get Started<a name="start"></a>
-You are welcome to contribute to the Zowe Documentation repository. Anyone can open an issue about documentation, or contribute a change with a pull request (PR) to the zowe/docs-site GitHub repository. However, before contributing a documentation change to the repository, you should be familiar with:
+You are welcome to contribute to the Zowe&trade; documentation repository. Anyone can open an issue about documentation, or contribute a change with a pull request (PR) to the zowe/docs-site GitHub repository. However, before contributing a documentation change to the repository, you should be familiar with:
 * Git and Github: To learn about git and GitHub, refer to the [Github Guides](https://guides.github.com/).
 * Slack: The Zowe Documentation team communicates using the Slack application. To learn about Slack, refer to the [Slack Help Center](https://slack.com/help). The Zowe team is part of the [Open Mainframe Project](https://openmainframeproject.slack.com
 ) channel.
@@ -24,53 +24,18 @@ In addition to being familiar with the Zowe community and how we work together, 
 
 ## Getting Started Checklist
 If you are ready to get started contributing to thhe Zowe Documentation repository:
-* Verify that you have completed all of the items in [Before You Get Started<a name="start"></a>](#before-you-get-started).
-* Familiarize yourself with the documentation repository
-  * Review the site's overall organization and structure
-  * Review the help files related to your planned changes or addition
-* Verify that you can open a pull request and review changes
-* Review the release process
-* Basic tools/setup for those that aren’t familiar although these are. (need some clarification on what the basic tools and setup may be, if not already address in the Before You Get Stated section)
-* Processes (open an issue, open a PR, etc…)
-* Read the documentation style guidelines
-* Fork the docs-stage repository (If you are not yet a committer) 
+* Verify that you are familiar with the concepts in [Before You Get Started<a name="start"></a>](#before-you-get-started).
+* Familiarize yourself with the [Zowe documentation repository](#the-zowe-documentation-repository)
+* Verify that you can open a [pull request and review changes](#sending-a-github-pull-request)
+* [Open an issue for Zowe documentation](#opening-an-issue-for-zowe-documentation) if you find a problem
+* Read the [documentation style guide](#documentation-style-guide-)
 
 ## The Zowe Documentation Repository
 The Zowe documentation is managed in a [GitHub repository](https://github.com/zowe/docs-site).
+* Review the site's overall organization and structure
+* Review the help files related to your planned changes or addition
+
 ## Sending a GitHub Pull Request
-
-## Opening An Issue for Zowe Documentation
-
-
-We provide you a set of guidelines for contributing to Zowe&trade; documentation, which are hosted in the [Zowe / docs-site][b5d824b5] on GitHub. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose content changes to this documentation.
-
-  [b5d824b5]: https://github.com/zowe/docs-site "https://github.com/zowe/docs-site"
-
-
-:arrow_right: [Before you get started](#start)
-
-:arrow_right: [Contributing to documentation](#contribute)
-
-:arrow_right: [Documentation style guide](#style)
-
-:arrow_right: [Word usage](#usage)
-
-## Befoe you get started
-
-The Zowe documentation is written in Markdown markup language. Not familiar with Markdown? [**Learn the basic syntax**][84fff357].
-
-
-[84fff357]: https://www.markdownguide.org/basic-syntax "https://www.markdownguide.org/basic-syntax"
-
-## How to contribute<a name="contribute"></a>
-
-You can use one of the following ways to contribute to documentation:
-
-- Send a GitHub pull request to provide a suggested edit for the content by clicking the **Propose content change in GitHub** link on each documentation page.
-- Open an issue in GitHub to request documentation to be updated, improved, or clarified by providing a comment.
-
-### Sending a GitHub pull request
-
 You can provide suggested edit to any documentation page by using the **Propose content change in GitHub** link on each page. After you make the changes, you submit updates in a pull request for the Zowe content team to review and merge.
 
 Follow these steps:
@@ -82,8 +47,7 @@ Follow these steps:
 6. Select **Propose file change**.
 7. Select **Create pull request**.
 
-### Opening an issue for the documentation
-
+## Opening An Issue for Zowe Documentation
 You can request the documentation to be improved or clarified, report an error, or submit suggestions and ideas by opening an issue in GitHub for the Zowe content team to address. The content team tracks the issues and works to address your feedback.
 
 Follow these steps:
