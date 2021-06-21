@@ -23,7 +23,7 @@ You are welcome to contribute to the Zowe&trade; documentation repository. Anyon
 In addition to being familiar with the Zowe community and how we work together, you will need to sign the CNCF Contributor License Agreement. The Contributor License Agreement defines the terms under which you contribute to Zowe documentation. Contributions to Zowe documentation are reviewed before being committed to the repository. Committing changes to the Zowe repository requires additional access rights. See https://github.com/zowe/community/blob/master/COMMITTERS.md. Also see Participating in Zowe Documentation for more details about roles and permissions.
 
 ## Getting Started Checklist
-If you are ready to get started contributing to thhe Zowe Documentation repository:
+If you are ready to get started contributing to the Zowe Documentation repository:
 * Verify that you are familiar with the concepts in [Before You Get Started<a name="start"></a>](#before-you-get-started).
 * Familiarize yourself with the [Zowe documentation repository](#the-zowe-documentation-repository)
 * Verify that you can open a [pull request and review changes](#sending-a-github-pull-request)
@@ -260,7 +260,7 @@ For whatever list or steps we are introducing, the word "following" should prece
 Example:
 - Before a procedure, use "Follow these steps:"
 - The <component_name> supports the following use cases:
-- Before you intall Zowe, review the following prerequisite installation tasks:
+- Before you install Zowe, review the following prerequisite installation tasks:
 
 Avoid ending the sentence with "following".
 
@@ -359,7 +359,7 @@ application  | app
 Capitalize "Server" when it's part of the product name |
 data set| dataset
 Java  |  java
-IBM z/OS Managemnt Facility (z/OSMF) <br> z/OSMF   | zosmf (unless used in syntax)
+IBM z/OS Management Facility (z/OSMF) <br> z/OSMF   | zosmf (unless used in syntax)
 ID| id
 PAX| pax
 personal computer <br> PC <br> server| machine
