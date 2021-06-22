@@ -1,9 +1,10 @@
 # Contributing to Zowe Documentation <!-- omit in toc -->
 
 - [Before You Get Started<a name="start"></a>](#before-you-get-started)
-- [Contributing to documentation<a name="contribute"></a>](#contributing-to-documentation)
-  - [Sending a GitHub pull request](#sending-a-github-pull-request)
-  - [Opening an issue for the documentation](#opening-an-issue-for-the-documentation)
+- [Getting Started Checklist](#getting-started-checklist)
+- [The Zowe Documentation Repository](#the-zowe-documentation-repository)
+- [Sending a GitHub Pull Request](#sending-a-github-pull-request)
+- [Opening An Issue for Zowe Documentation](#opening-an-issue-for-zowe-documentation)
 - [Documentation Style guide <a name="style"></a>](#documentation-style-guide-)
   - [Headings and titles<a name="headings"></a>](#headings-and-titles)
   - [Technical elements<a name="ui"></a>](#technical-elements)
@@ -12,6 +13,8 @@
   - [Graphics<a name="graphics"></a>](#graphics)
   - [Abbreviations<a name="abbreviations"></a>](#abbreviations)
   - [Structure and format<a name="Structure"></a>](#structure-and-format)
+  - [Word usage<a name="usage"></a>](#word-usage-1)
+   
 
 ## Before You Get Started<a name="start"></a>
 You are welcome to contribute to the Zowe&trade; documentation repository. Anyone can open an issue about documentation, or contribute a change with a pull request (PR) to the zowe/docs-site GitHub repository. However, before contributing a documentation change to the repository, you should be familiar with:
